@@ -241,6 +241,7 @@ El objetivo fundamental de un conversor es servir como un puente entre el mundo 
 
 
 08/08/2024
+# Transformada Z de adelantos y atrasos
 
 
 
