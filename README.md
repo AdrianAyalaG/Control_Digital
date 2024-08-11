@@ -1,3 +1,4 @@
+29 / 08 / 2024
 # Introducción a Control Digital
 
 El control digital a menudo se percibe como diferente del control analógico, que inicialmente se investiga en el campo del control. Pero en realidad es la transferencia del sistema de control analógico completo a una unidad digital lo que da origen al control digital.
@@ -50,6 +51,7 @@ El docente suministra material de estudio que explica de forma clara cada uno de
 * Control Digital, de Digitalia.
 * Control Digital, Ogatac
   >🔑 Este apoyo bibliográfico se enfoca más a la parte matemática.
+
 
 01/08/2024
 # Señales Analógicas y Digitales y convertidores ADC y DAC 
@@ -236,3 +238,9 @@ El objetivo fundamental de un conversor es servir como un puente entre el mundo 
 [2] FabioLeon, “¿Qué son señales analógicas y digitales en electrónica?,” DynamoElectronics, 13-Jul-2022. [Online]. Available: https://www.dynamoelectronics.com/que-son-senales-analogicas-y-digitales-en-electronica/. [Accessed: 09-Aug-2024].
 [3] “DAC Con Resistencias Ponderadas,” Scribd. [Online]. Available: https://es.scribd.com/document/343360980/DAC-Con-Resistencias-Ponderadas. [Accessed: 10-Aug-2024].
 [4] V. T. las E. De msavalos, “¿Cómo funciona un Conversor Digital-Analógico (DAC) R2R?,” Electrónica + Programación + GNU/Linux, 19-Jan-2021. [Online]. Available: https://electronlinux.wordpress.com/2021/01/19/como-funciona-un-conversor-digital-analogico-dac-r2r/. [Accessed: 10-Aug-2024].
+
+
+08/08/2024
+
+
+
