@@ -54,6 +54,7 @@ El docente suministra material de estudio que explica de forma clara cada uno de
 
 # 
 01/08/2024
+
 # Señales Analógicas y Digitales y convertidores ADC y DAC 
 En el campo de la electrónica, la adquisición y generación de señales es fundamental para comprender y analizar el comportamiento de variables que percibimos tanto de manera tangible como a través de nuestros sentidos. Estas señales se dividen en las señales naturales que no siempre son generadas por el ser humano y representan medidas de variables físicas, como la temperatura, la humedad o la presión. Por otro lado, las señales digitales son creadas por el ser humano y toman valores lógicos, como "1" o "0". Ambas categorías de señales son cruciales tanto para la electrónica como para la vida cotidiana.
 Para conectar el mundo analógico con el digital, se han desarrollado convertidores ADC (Analog-to-Digital Converter) y DAC (Digital-to-Analog Converter). Estos dispositivos actúan como un puente, transformando señales físicas en datos digitales que pueden ser utilizados por sistemas electrónicos mucho más modernos.
@@ -239,7 +240,7 @@ El objetivo fundamental de un conversor es servir como un puente entre el mundo 
 [3] “DAC Con Resistencias Ponderadas,” Scribd. [Online]. Available: https://es.scribd.com/document/343360980/DAC-Con-Resistencias-Ponderadas. [Accessed: 10-Aug-2024].
 [4] V. T. las E. De msavalos, “¿Cómo funciona un Conversor Digital-Analógico (DAC) R2R?,” Electrónica + Programación + GNU/Linux, 19-Jan-2021. [Online]. Available: https://electronlinux.wordpress.com/2021/01/19/como-funciona-un-conversor-digital-analogico-dac-r2r/. [Accessed: 10-Aug-2024].
 
-
+#
 08/08/2024
 # Transformada Z de adelantos y atrasos
 La implementación de la transformada Z se refiere a la discretización de una señal. Este método matemático permite convertir una señal de tiempo continuo en una señal de tiempo discreto [2]. Cuando nos referimos a la transformada Z de adelantos, nos referimos a muestras futuras. Por otro lado, la transformación Z de atraso se refiere a muestras pasadas.
@@ -255,7 +256,7 @@ La implementación de la transformada Z se refiere a la discretización de una s
 [2]	“Transformada Z”, Www.uv.es. [En línea]. Disponible en: https://www.uv.es/masefor/PAGINAS/transformadaz.html. [Consultado: 08-ago-2024].
 
 
-
+#
 15/08/2024
 # Discretización de controladores Analógicos
 
