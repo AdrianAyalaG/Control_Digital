@@ -52,7 +52,7 @@ El docente suministra material de estudio que explica de forma clara cada uno de
 * Control Digital, Ogatac
   >🔑 Este apoyo bibliográfico se enfoca más a la parte matemática.
 
-
+# 
 01/08/2024
 # Señales Analógicas y Digitales y convertidores ADC y DAC 
 En el campo de la electrónica, la adquisición y generación de señales es fundamental para comprender y analizar el comportamiento de variables que percibimos tanto de manera tangible como a través de nuestros sentidos. Estas señales se dividen en las señales naturales que no siempre son generadas por el ser humano y representan medidas de variables físicas, como la temperatura, la humedad o la presión. Por otro lado, las señales digitales son creadas por el ser humano y toman valores lógicos, como "1" o "0". Ambas categorías de señales son cruciales tanto para la electrónica como para la vida cotidiana.
