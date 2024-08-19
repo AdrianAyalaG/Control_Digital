@@ -242,6 +242,23 @@ El objetivo fundamental de un conversor es servir como un puente entre el mundo 
 
 08/08/2024
 # Transformada Z de adelantos y atrasos
+La implementación de la transformada Z se refiere a la discretización de una señal. Este método matemático permite convertir una señal de tiempo continuo en una señal de tiempo discreto [2]. Cuando nos referimos a la transformada Z de adelantos, nos referimos a muestras futuras. Por otro lado, la transformación Z de atraso se refiere a muestras pasadas.
+
+
+
+
+
+
+
+## Referencias
+[1] “AulasVirtualesECCI: Entrar al sitio,” Edu.co. [Online]. Available: https://aulas.ecci.edu.co/course/view.php?id=9304. [Accessed: 10-Aug-2024].
+[2]	“Transformada Z”, Www.uv.es. [En línea]. Disponible en: https://www.uv.es/masefor/PAGINAS/transformadaz.html. [Consultado: 08-ago-2024].
+
+
+
+15/08/2024
+# Discretización de controladores Analógicos
+
 
 
 
