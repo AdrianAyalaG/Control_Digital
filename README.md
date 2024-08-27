@@ -335,3 +335,24 @@ Después de obtener los tres valores al final del arreglo de Jury, se evaluan la
 3. $$\left| s_{0} \right| = \left| s_{3} \right|$$
 4. Y en el caso de la Img.12, el ultimo valor a evaluar será $$\left| r_{0} \right| = \left| r_{2} \right|$$
 >🔑 Condición: Si al menos una no se cumple, el sistema es inmediatamente INESTABLE.
+
+💡'Ejemplo 1:'
+Una vez comprendidos los criterios de estabilidad de Jury, se presenta el siguiente ejemplo:
+
+Polinomio característico:
+$$z^{4} - 1.2z^{3} + 0.07z^{2} + 0.3z - 0.08 = 0$$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
