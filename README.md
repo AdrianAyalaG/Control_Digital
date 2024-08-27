@@ -1,5 +1,3 @@
-#
-29 / 08 / 2024
 # Introducción a Control Digital
 
 El control digital a menudo se percibe como diferente del control analógico, que inicialmente se investiga en el campo del control. Pero en realidad es la transferencia del sistema de control analógico completo a una unidad digital lo que da origen al control digital.
@@ -11,8 +9,8 @@ El semestre cubrirá una variedad de temas, que incluyen:
 * Transformada Z.
 * Función de Transferencia.
 * Estabilidad
-  >🔑 Se enfatiza en el Test de Jury. 
-* Discrtización de controladores.
+  >🔑 Enfoque: Se enfatiza en el Test de Jury. 
+* Discretización de controladores.
 * Métodos algebraicos.
 * Respuesta en frecuencia.
 * Espacio Estados.
@@ -53,9 +51,7 @@ El docente suministra material de estudio que explica de forma clara cada uno de
 * Control Digital, Ogatac
   >🔑 Este apoyo bibliográfico se enfoca más a la parte matemática.
 
-# 
 01/08/2024
-
 # Señales Analógicas y Digitales y convertidores ADC y DAC 
 En el campo de la electrónica, la adquisición y generación de señales es fundamental para comprender y analizar el comportamiento de variables que percibimos tanto de manera tangible como a través de nuestros sentidos. Estas señales se dividen en las señales naturales que no siempre son generadas por el ser humano y representan medidas de variables físicas, como la temperatura, la humedad o la presión. Por otro lado, las señales digitales son creadas por el ser humano y toman valores lógicos, como "1" o "0". Ambas categorías de señales son cruciales tanto para la electrónica como para la vida cotidiana.
 Para conectar el mundo analógico con el digital, se han desarrollado convertidores ADC (Analog-to-Digital Converter) y DAC (Digital-to-Analog Converter). Estos dispositivos actúan como un puente, transformando señales físicas en datos digitales que pueden ser utilizados por sistemas electrónicos mucho más modernos.
@@ -120,15 +116,15 @@ Figura 6.
 * Tp: Es el tiempo de apertura, lo que quiere decir que es el tiempo que pasa desde la retención hasta que se abre el muestreador.
 * Ts: El movimiento constante del interruptor crea capacitancia parásita, un fenómeno que produce un estado transitorio en la señal de salida, por lo que Ts que significa tiempo de establecimiento es el tiempo que necesita la señal para que las oscilaciones desaparezcan.
 
-# 💡'Ejercicios'
-## 1. Se tienen los siguientes datos: 
+## 💡'Ejemplo 1:'
+### Se tienen los siguientes datos: 
 * Señal analógica: [0.3]V
 * Bits de representación: 2 bits
 * $$2^{2}$$ = 4 posibles símbolos
 * Rango analógico: 3-0=3V
 * Representación: 3/4 = 0.75V
   
-|  *Voltaje*  |  *Binario*  |
+|  Voltaje  |  Binario  |
 |---------------|---------------|
 |       0       |      00       |
 |     0.75      |      01       |
@@ -138,8 +134,8 @@ Figura 6.
 Tabla 1. Valores que se están cuantizando.
 
 * Son $$2^{r}-1$$ posibles símbolos porque se toma el 0.
-
-## 2. Para Arduino: 
+💡'Ejemplo 2:'
+### Para Arduino: 
 * Señal analógica: [0.5]V
 * Bits de representación: 10 bits
 * $$2^{10}$$ = 1024 posibles símbolos
@@ -151,7 +147,7 @@ Tabla 1. Valores que se están cuantizando.
 * La resolución depende de los bits de representación al igual que en los ADC. Para rango completo hay  $$2^{n}$$ valores analógicos que incluyen el 0
 * FS (Fondo de escala): Máximo voltaje que se tendrá en el rango de conversión, se representa con el símbolo de %
 
-| *Bits entrada* | *Resolución (V)* |*Resolución(%FS)*|
+| Bits entrada | Resolución (V) |Resolución(%FS)|
 |------------------|--------------------|-------------------|
 |        4         |         1          |      6.6          |
 |        8         |       0.059        |      0.4          |
@@ -209,6 +205,7 @@ Figura 8.
 *Nunca se tiene Vout=Vcc aunque se hagan muchas sumas parciales 
 >🔑 Desventaja: Hay relación de resistencias que afectan la tolerancia de las mismas. Además de ello a veces hay que poner FILTROS para no observar saltos de tensión (escalones), pero limita la Freq máxima que se puede obtener.
 # 📚'Ejercicios'
+2. 
 
 ## 4. Modelo matemático conversores A/D y D/A
 * Utilizan mismos componentes. Muestreador y retenedor.
@@ -228,7 +225,7 @@ Figura 9.
 
 * Subir la retención, implica un incremento en el costo del conversor.
 ### 5.2 First Order Hold (FOH)
->🔑 Ventaja: Toma más valores, es decir, puede tener un analisis de más información ya que tiene un modelo lineal.
+>🔑 Ventaja: Toma más valores, es decir, puede tener un análisis de más información ya que tiene un modelo lineal.
 ### 5.3 Second Order Hold (SOH)
 >🔑 Ventaja: Modelo parabólico durante intervalo de muestreo.
 
@@ -241,28 +238,100 @@ El objetivo fundamental de un conversor es servir como un puente entre el mundo 
 [3] “DAC Con Resistencias Ponderadas,” Scribd. [Online]. Available: https://es.scribd.com/document/343360980/DAC-Con-Resistencias-Ponderadas. [Accessed: 10-Aug-2024].
 [4] V. T. las E. De msavalos, “¿Cómo funciona un Conversor Digital-Analógico (DAC) R2R?,” Electrónica + Programación + GNU/Linux, 19-Jan-2021. [Online]. Available: https://electronlinux.wordpress.com/2021/01/19/como-funciona-un-conversor-digital-analogico-dac-r2r/. [Accessed: 10-Aug-2024].
 
-#
-08/08/2024
 
-# Transformada Z de adelantos y atrasos
-La implementación de la transformada Z se refiere a la discretización de una señal. Este método matemático permite convertir una señal de tiempo continuo en una señal de tiempo discreto [2]. Cuando nos referimos a la transformada Z de adelantos, nos referimos a muestras futuras. Por otro lado, la transformación Z de atraso se refiere a muestras pasadas.
+22/08/2024
+# ESTABILIDAD EN SISTEMAS DISCRETOS 
+La estabilidad es un concepto clave en el análisis de sistemas de control de movimiento que evolucionan en intervalos discretos de tiempo, ya que un sistema discreto se considera estable si su respuesta a una entrada se mantiene acotada conforme avanza el tiempo. En este contexto, el análisis en el espacio de Laplace mantiene el mismo concepto de estabilidad, aunque la representación de la frontera de estabilidad cambia: En lugar de estar representada por el eje vertical, se representa mediante un círculo en el plano z. Para evaluar la estabilidad de estos sistemas discretos, se utilizan diferentes enfoques, como la estabilidad asintótica, la estabilidad BIBO (Bounded Input-Bounded Output) y el criterio de estabilidad de Jury.
+## Estabilidad absoluta
+>🔑 Definición: Se se aplica un patrón en la entrada y la respuesta (salida) tiene las mismas características, entonces es ESTABLE.
 
+![Figura de prueba](ESTABILIDADLP.PNG)
 
+Figura 10. Estabilidad en LaPlace. 
 
+* Con la anterior imagen se tiene la siguiente equivalencia en el plano Z: $$z=e^{Ts}$$
+  Expresando: $$s= \sigma+jw$$
+* Tres situaciones:
+  1. Para $$\sigma>0 \to \lim_{\sigma \to 0} e^{\sigma T} = 1$$
+     $$\lim_{\sigma \to \infty } e^{\sigma T} = \infty $$
+     *El sistema es INESTABLE
+  2. Para $$\sigma = 0 \to e^{\sigma T} = 1$$
+     *El sistema es marginalmente estable
+  3. Para $$\sigma < 0 \to \lim_{\sigma \to 0} = e^{-\sigma T}=1$$ y 
+     $$\lim_{\sigma \to \infty } = e^{-\sigma T}= 0$$
+     *El sistema es ESTABLE
+     
+![Figura de prueba](ESTABILIDADLP.PNG)
 
+Figura 11. Estabilidad en el plano Z.
 
+* Alejarse del origen, se vuelve más lento.
+* El polo dominante es aquel que está más cerca del radio 1 en el plano z.
+  
+## 💡'Ejemplo 1:'
+1. $$G(z)=\frac{4}{z^{3}-7.8z^{2}+13.4z+3}$$
+Se iguala a 0 el denominador y se obtienen los tres polos:
+$$z=5, z=3, z=0.2$$
+Hay un polo dentro del radio de estabiidad, los otros dos polos están por fuera. Sistema INESTABLE
 
+## 💡'Ejemplo 2:'
+$$G(z)= \frac{z-3}{z^{3}-1.5z^{2}+0.66z-0.08}$$
+Los polos son: 
+$$z=0.5, z=0.8, z=0.2$$
+El sistema es ESTABLE porque todos los polos están dentro de circulo unitario.
 
-## Referencias
-[1] “AulasVirtualesECCI: Entrar al sitio,” Edu.co. [Online]. Available: https://aulas.ecci.edu.co/course/view.php?id=9304. [Accessed: 10-Aug-2024].
-[2]	“Transformada Z”, Www.uv.es. [En línea]. Disponible en: https://www.uv.es/masefor/PAGINAS/transformadaz.html. [Consultado: 08-ago-2024].
+## 💡'Ejemplo 3:'
+$$G(z)= \frac{-0.075997z+0.0101}{z^{2}-1.5804z+0.6238}$$
+Los polos son: 
+$$z=0.76, z=0.81$$
+El zero sería: 0.132
 
+## 1. Estabilidad Asintótica 
+Se dice que un sistema es asintóticamente estable si su respuesta frente a una variedad de condiciones iniciales decae a cero. Se presenta mediante una ecuación muy sencilla: 
+$$\lim_{k \to \infty } y(k)=0$$
+Con esto se puede decir que si el sistema está limitado pero no decae a 0, entonces es marginalmente estable. El resto de respuestas hará inestable al sistema.
 
-#
-15/08/2024
+## 2. Estabilidad BIBO(Boundary INPUT,Boundary OUTPUT)
+Una respuesta acotada a una entrada acotada permanece acotada en la salida. Uno de los métodos más comunes para evaluar este tipo de estabilidad es el Test de Jury, que utiliza criterios específicos que un sistema debe cumplir para garantizar su estabilidad.
+### 2.1 Test de Jury 
+Sabiendo que el polinomio caracteristico de una función de transferencia en el plano z, es el siguiente: 
+$$D(z)= a_{0}z^{n}+a_{1}z^{n-1}+...+a_{n-1}z+a_{n}$$
+#### 2.1.1 Condiciones:
+1. $$a_{0}>0$$
+2. $$a_{n} < a_{0}$$
+3. $$P(z)|_{z=1}>0$$
+4. $$P(z)|_{z=1}\to > 0 para n par$$ 
+   $$\to < 0 para n impar$$ 
+5. Construir arreglo de Jury. Con tres términos al final se termina de realizar el arreglo.
+>🔑 Condición: Si al menos una no se cumple, el sistema es inmediatamente INESTABLE.
 
-# Discretización de controladores Analógicos
+####2.1.2 Criterio de estabilidad de Jury
 
+![Figura de prueba](ESTABILIDADLP.PNG)
 
+Figura 12. Tabla arreglo de Jury 
 
+Este criterio consiste en organizar los coeficientes de las potencias de  z en orden ascendente de acuerdo con sus exponentes. En la segunda fila, se utilizan los mismos coeficientes, pero en orden inverso. Esto permite calcular la siguiente ecuación matemática para determinar los valores requeridos: 
+*Una matriz 2x2 que relaciona la primera columna de la tabla con la ultima pero con los coeficientes invetidos:
+$$b_{n-1}=|\begin{matrix}
+a_{0} & a_{n-1}\\
+a_{n-1} & a_{1}
+\end{matrix}|$$
+Lo que es igual a: 
+$$a_{n}a_{1}-a_{0}a_{n-1}$$
+Se resuelve cada arreglo de matrices hasta llegar a b0, donde:
+$$b_{0}=|\begin{matrix}
+a_{n} & a_{0}\\
+a_{0} & a_{n}
+\end{matrix}|$$
+Lo que es igual a: 
+$$a_{n}a_{n}-a_{0}a_{0}$$
+Se vuelve a rellenar la cuarta fila con los mismos coeficientes pero invertidos y se repite el proceso hasta obtener tres valores al final de la tabla.
 
+##### 2.1.2.1 Condiciones después del arreglo de Jury 
+Después de obtener los tres valores al final del arreglo de Jury, se evaluan las siguientes condiciones:
+1. $$\left| b_{0} \right| = \left| b_{n-1} \right|$$
+2. $$\left| c_{0} \right| = \left| c_{n-2} \right|$$
+3. $$\left| s_{0} \right| = \left| s_{3} \right|$$
+4. Y en el caso de la Img.12, el ultimo valor a evaluar será $$\left| r_{0} \right| = \left| r_{2} \right|$$
+>🔑 Condición: Si al menos una no se cumple, el sistema es inmediatamente INESTABLE.
