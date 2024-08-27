@@ -313,7 +313,7 @@ Figura 12. Tabla arreglo de Jury
 
 Este criterio consiste en organizar los coeficientes de las potencias de  z en orden ascendente de acuerdo con sus exponentes. En la segunda fila, se utilizan los mismos coeficientes, pero en orden inverso. Esto permite calcular la siguiente ecuación matemática para determinar los valores requeridos: 
 *Una matriz 2x2 que relaciona la primera columna de la tabla con la ultima pero con los coeficientes invetidos:
-$$b_{n-1}=|\begin{matrix}
+$$ b_{n-1}=|\begin{matrix}
 a_{0} & a_{n-1}\\
 a_{n-1} & a_{1}
 \end{matrix}|$$
@@ -336,11 +336,13 @@ Después de obtener los tres valores al final del arreglo de Jury, se evaluan la
 4. Y en el caso de la Img.12, el ultimo valor a evaluar será $$\left| r_{0} \right| = \left| r_{2} \right|$$
 >🔑 Condición: Si al menos una no se cumple, el sistema es inmediatamente INESTABLE.
 
-💡'Ejemplo 1:'
+## 💡'Ejemplo 1:'
 Una vez comprendidos los criterios de estabilidad de Jury, se presenta el siguiente ejemplo:
-
-Polinomio característico:
+* Identificación del polinomio característico:
 $$z^{4} - 1.2z^{3} + 0.07z^{2} + 0.3z - 0.08 = 0$$
+
+* Evaluación de condiciones: 
+1. $$a_{0} > 0 $$ en este caso: $$1 > 0$$
 
 
 
