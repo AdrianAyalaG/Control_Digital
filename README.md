@@ -394,9 +394,13 @@ Con relación a lo obtenido se determina que este sistema es estable.
 
 ## 💡'Ejemplo 2:'
 
+$$z^{5} + 2.6z^{4} + 0.56z^{3} -2.05z^{2} + 0.0775z + 0.35 = 0$$
+1. $$1 > 0$$
+2. $$0.35 < 1$$
+3. $$P(z)|_{z=1}$$, en este caso: $$(1)^{5} + 2.6*(1)^{4} + 0.56*(1)^{3} - 2.05*(1)^{2} + 0.0775*(1) + 0.35 = 1.41 > 0$$
+4. $$P(z)|_{z=-1}$$, en este caso: $$(-1)^{5} + 2.6*(-1)^{4} + 0.56*(-1)^{3} - 2.05*(-1)^{2} + 0.0775*(-1) + 0.35 = 0.382 > 0$$
 
-
-
+No se esta cumpliendo con el criterio de al se $$n$$ un número impar debe ser menor a 0. Por ende, el sistema es inestable
 
 
 
