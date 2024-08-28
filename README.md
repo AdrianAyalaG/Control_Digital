@@ -338,14 +338,17 @@ Después de obtener los tres valores al final del arreglo de Jury, se evaluan la
 
 ## 💡'Ejemplo 1:'
 Una vez comprendidos los criterios de estabilidad de Jury, se presenta el siguiente ejemplo:
-* Identificación del polinomio característico:
+* Polinomio característico:
 $$z^{4} - 1.2z^{3} + 0.07z^{2} + 0.3z - 0.08 = 0$$
 
 * Evaluación de condiciones: 
-1. $$a_{0} > 0 $$ en este caso: $$1 > 0$$
+1. $$a_{0} > 0 $$, en este caso: $$1 > 0$$
+2. $$|a_{n}| < a_{0}$$, en este caso: $$0.08 < 1$$
+3. $$P(z)|_{z=1}$$, en este caso: $$(1)^{4} - 1.2*(1)^{3} + 0.07*(1)^{2} + 0.3*(1) - 0.08 = 0.09 > 0$$
+4. $$P(z)|_{z=-1}$$, en este caso: $$(-1)^{4} - 1.2*(-1)^{3} + 0.07*(-1)^{2} + 0.3*(-1) - 0.08 = 1.89 > 0$$
 
-
-
+* Cumplimiento de las condiciones, se construye el arreglo de Jury:
+  $$z^{4} - 1.2z^{3} + 0.07z^{2} + 0.3z - 0.08 = 0$$
 
 
 
